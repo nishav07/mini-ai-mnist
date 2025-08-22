@@ -1,4 +1,6 @@
 # ye kaam ki jagah nhi hai isko chor do
+
+
 seed: 42
 data:
   root: ~/.torch/datasets        
@@ -15,3 +17,4 @@ paths:
   best_ckpt_name: best.pt
 hardware:
   use_amp: true                  
+
