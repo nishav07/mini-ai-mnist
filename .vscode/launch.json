@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train (MNIST)",
+      "type": "python",
+      "request": "launch",
+      "module": "src.train",
+      "justMyCode": true,
+      "args": ["--config", "config.yaml"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Eval (MNIST)",
+      "type": "python",
+      "request": "launch",
+      "module": "src.eval",
+      "justMyCode": true,
+      "args": [
+        "--config", "config.yaml",
+        "--checkpoint", "artifacts/best.pt"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
