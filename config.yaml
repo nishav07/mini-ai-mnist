@@ -1,0 +1,17 @@
+# ye kaam ki jagah nhi hai isko chor do
+seed: 42
+data:
+  root: ~/.torch/datasets        
+  num_workers: 2
+  batch_size: 128
+train:
+  epochs: 3
+  lr: 0.001
+  weight_decay: 0.0
+  log_interval: 100              
+  val_split: 0.1                 
+paths:
+  artifacts_dir: artifacts       
+  best_ckpt_name: best.pt
+hardware:
+  use_amp: true                  
