@@ -1,50 +1,5 @@
 from torch import nn
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class MNISTCNN(nn.Module):
     def __init__(self, num_classes: int = 10):
         super().__init__()

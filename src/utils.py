@@ -7,6 +7,7 @@ import torch
 from torch import nn
 import yaml
 
+
 @dataclass
 class AverageMeter:
     """Keeps running average of a metric."""
@@ -26,7 +27,6 @@ def seed_everything(seed: int = 42):
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
-    # Deterministic flags can slow down training; this is a good compromise:
     torch.backends.cudnn.benchmark = True
 
 def get_device() -> torch.device:
